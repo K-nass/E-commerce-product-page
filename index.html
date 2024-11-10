@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="navBar">
+        <div>
+          <img class="menuIcon" src="images/icon-menu.svg" alt="menu icon" width="10px" height="10px">
+          <img class="logo" src="images/logo.svg" alt="logo image" width="100px">
+        </div>
+        <ul>
+          <li>
+            <img class="closeBtn" src="images/icon-close.svg" alt="close btn">
+          </li>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div>
+        <button id="cartBtn">
+          <img class="cardImg" src="images/icon-cart.svg" alt="cart details" width="20px">
+          <span class="noOfItems"></span>
+        </button>
+        <button>
+          <img class="imgAvatar" src="images/image-avatar.png" alt="" width="20px">
+        </button>
+      </div>
+    </div>
+
+  </nav>
+
+  <main>
+    <div class="container productContainer">
+      <div class="sliderContainer">
+        <div class="slider">
+          <div class="slides">
+            <img class="slide" src="images/image-product-1.jpg" alt="">
+            <img class="slide" src="images/image-product-2.jpg" alt="">
+            <img class="slide" src="images/image-product-3.jpg" alt="">
+            <img class="slide" src="images/image-product-4.jpg" alt="">
+          </div>
+          <div>
+            <button class="next"><img src="images/icon-next.svg" alt=""></button>
+            <button class="prev"><img src="images/icon-previous.svg" alt=""></button>
+          </div>
+          <div class="cart"></div>
+        </div>
+        <div class="thumbnails">
+          <img src="images/image-product-1-thumbnail.jpg" alt="">
+          <img src="images/image-product-2-thumbnail.jpg" alt="">
+          <img src="images/image-product-3-thumbnail.jpg" alt="">
+          <img src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="container contentContainer">
+        <p>sneaker company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="prices">
+          <div class="discount">
+            <span id="priceItem">$125.00</span>
+            <span>50%</span>
+          </div>
+          <span id="originalPrice" class="">$250.00</span>
+        </div>
+        <div class="quantityContainer">
+          <div class="quantity">
+            <button id="decrement">
+              <img src="images/icon-minus.svg" alt="">
+            </button>
+            <span>0</span>
+            <button id="increment">
+              <img src="images/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <button class="addCart">
+            <img class="cardImg" src="images/icon-cart -button.svg" alt="cart details" width="20px">
+            Add to cart
+          </button>
+        </div>
+      </div>
+      <div id="notification-container"></div>
+    </div>
+  </main>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
